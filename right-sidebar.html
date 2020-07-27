@@ -24,40 +24,46 @@
 	<body id="top">
 		<style>
 			div.gallery {
-			  margin: 5px;
+			  margin: 25px;
 			  border: 1px solid #ccc;
 			  position: relative;
-  				left: 80px;
+			  left: -5px;
 			  width: 180px;
+
 			}
-			div.galleryy {
-			  margin: 5px;
-			  border: 1px solid #ccc;
-			  position: relative;
-  				left: 100px;
-			  width: 180px;
-			}
-			
-			div.gallery:hover {
-			  border: 1px solid #777;
-			}
-			
 			div.gallery img {
 			  width: 100%;
 			  height: 180px;
 			  float: center;
 			}
-			div.galleryy img {
-			  width: 100%;
-			  height: 180px;
-			  float: right;
-			  
+			.card {
+				color: white;
+				padding: 1rem;
+				height: 23rem;
+				padding: 0.2cm;
+				}
+
+			.cards {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: grid;
+			grid-gap: 0.3 cm;
 			}
-			.center {
-			  display: block;
-  			  margin-left: auto;
-			  margin-right: auto;
-			  width: 40%;
+
+			/* Screen larger than 600px? 2 column */
+			@media (min-width: 600px) {
+			.cards { grid-template-columns: repeat(1, 1fr); }
+			}
+
+			/* Screen larger than 900px? 3 columns */
+			@media (min-width: 900px) {
+			.cards { grid-template-columns: repeat(4, 1fr); }
+			}
+
+			.mad{
+  position: relative;
+  left: 45px;
+  
 			}
 			
 			div.desc {
@@ -83,97 +89,73 @@
 				<header class="major">
 					<h2>Team</h2>
 				</header>
-				<center><h3>Indian Institute of Science</h3></center>
-				<div class="row" >
-					<div class="4u">
-						<section>
-							
-								<div class="galleryy">
-								<a  href="#">
-								<center> <img src="./images/faculty-chiru.jpg"  alt="Forest" width="600" height="400"></center>
-								</a>
-								<div class="desc">Prof. Chiranjib Bhattacharyya, CSA, IISc</div>
-							  </div>
-							  			
-						</section>
+			
+				<h3 class="mad">Indian Institute of Science</h3>
+
+				<div class="cards">
+
+					<div class="card">
+
+						<div class="gallery">
+							<a  href="#">
+							<center> <img src="./images/faculty-chiru.jpg"  alt="Forest" width="600" height="400"></center>
+							</a>
+							<div class="desc" style="color:black;">Prof. Chiranjib Bhattacharyya, CSA, IISc</div>
+						  </div>
 					</div>
-					<div class="row">
-						<div class="4u">
-							<div class="gallery">
-								<a  href="#">
-								  <img src="./images/0.jpeg" alt="Forest" width="600" height="400">
-								</a>
-								<div class="desc">Sabyasachi Sahoo, Project Associate, CSA, IISc</div>
-							  </div>
-						</div>
-					</div>	
-					<div class="row">
-						<div class="4u">
-							<div class="gallery">
-								<a  href="#">
-								  <img src="./images/prashant.png" alt="Forest" width="600" height="400">
-								</a>
-								<div class="desc">Prashant Kumar,  Project Associate, CSA, IISc</div>
-							  </div>
-						</div>
-					</div>	
-				
-					<div class="row">
-						<div class="4u">
-							<div class="gallery">
-								<a  href="#">
-								<img src="./images/santosh.png" alt="Forest" width="600" height="400">
-								</a>
-								<div class="desc">Santosh Shet, Research Intern, IISc </div>
-							</div>
+					<div class="card">
+						<div class="gallery">
+							<a  href="#">
+							  <img src="./images/0.jpeg" alt="Forest" width="600" height="400">
+							</a>
+							<div class="desc" style="color:black;">Sabyasachi Sahoo, Project Associate, CSA, IISc</div>
+						  </div>
+					</div>
+					<div class="card">
+						<div class="gallery">
+							<a  href="#">
+							  <img src="./images/prashant.png" alt="Forest" width="600" height="400">
+							</a>
+							<div class="desc" style="color:black;">Prashant Kumar,  Project Associate, CSA, IISc</div>
+						  </div>
+					</div>
+					<div class="card">
+						<div class="gallery">
+							<a  href="#">
+							<img src="./images/santosh.png" alt="Forest" width="600" height="400">
+							</a>
+							<div class="desc" style="color:black;">Santosh Shet, Research Intern, IISc </div>
 						</div>
 					</div>
+			
 				</div>
-				<br>
-				<br>
-				<center><h3>NIRAMAI HEALTH Analytix</h3></center>
-				<div class="4u">
-					<section>
+				<h3 class="mad">NIRAMAI HEALTH Analytix</h3>
+				<div class="cards" class="right">
 					
-					<div class="galleryy">
-						<a  href="#">
-						  <img src="./images/geeta.png" alt="Cinque Terre" class="center" width="600" height="400">
-						</a>
-						<div class="desc">Geetha Manjunath, CEO & Founder of Niramai</div>
-					  </div> 				
-					</section>
+					<div class="card" >
+						<div class="gallery" >
+							
+							<a  href="#">
+							<center><img src="./images/geeta.png" alt="Cinque Terre"  width="600" height="400"></center>
+							</a>
+							<div class="desc" style="color:black;">Geetha Manjunath, CEO & Founder of Niramai</div>
+						  </div> </div>
+					
+				</div>
+				<h3 class="mad">cardiology at doorstep</h3>
+				<div class="cards">
+					
+					<div class="card">
+						<div class="gallery">
+							<a  href="#">
+							<center> <img src="./images/images.jpeg"  alt="Forest" width="600" height="400"></center>
+							</a>
+							<div class="desc" style="color:black;">Dr. Padmanabha Kamath, Prof & Head of Cardiology, KMC</div>
+						  </div></div>
+					
 				</div>
 
-
-				
-				<br>
-				<br>
-				<center><h3>cardiology at doorstep</h3></center>
-					<div class="4u">
-						<section>
-							
-								<div class="galleryy">
-								<a  href="#">
-								<center> <img src="./images/images.jpeg"  alt="Forest" width="600" height="400"></center>
-								</a>
-								<div class="desc">Dr. Padmanabha Kamath, Prof & Head of Cardiology, KMC</div>
-							  </div>
-							  			
-						</section>
-					</div>
-					
-							
-
-				
-
-
-
-
-
-
-
-
-				
+			
 					
 				</div>
 			</section>
