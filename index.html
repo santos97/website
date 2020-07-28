@@ -59,7 +59,33 @@
 				display: table;
 				color: #000000;
 			}
-			
+			@media screen and (1200px: 601px) {
+			.intro {
+				position: static;
+				margin: -20px 0px;
+				margin-left: 25px;
+				width: 400px;
+			}
+			}
+
+			@media screen and (max-width: 600px) {
+		    .intro {
+				position: static;
+				margin: -10px 0px;
+				width: 320px;
+				margin-left: 5px;
+
+			}
+			}
+			@media screen and (min-width: 801px) {
+		    .intro {
+				position: static;
+				margin: -10px 0px;
+				width: 1400px;
+				margin-left: 10px;
+
+			}
+			}
 			
 		</style>
 		<!-- Header -->
@@ -91,7 +117,7 @@
 			<section id="one" class="wrapper style1">
 				<header class="major">
 					<h2>Diagnosing COVID-19 using Chest X-ray</h2>
-					<p><span style="text-justify:inter-cluster;">We use state of art deep learning models to provide with likely COVID-19 and Pneumonia predictions. Our aim is to identify affected lung regions that can help doctors understand the severity of illness of their patients. SWIFT (Simple Whatsapp based  Image interpretation at your Finger Tips) is a free Whatsapp based service to provide with swift diagnosis of potential COVID19 patients by analyzing Chest X-Ray images. We are running a small scale pilot where interested doctors within minutes, can receive a machine generated X-ray Report (as the one shown below) on sending us chest X-Ray of suspicious patients.</span></p><br>
+					<center><p class="intro" style="text-align:center;">We use state of art deep learning models to provide with likely COVID-19 and Pneumonia predictions. Our aim is to identify affected lung regions that can help doctors understand the severity of illness of their patients.</p> <br><p class="intro" style="text-align:center;">SWIFT (Simple Whatsapp based  Image interpretation at your Finger Tips) is a free Whatsapp based service to provide with swift diagnosis of potential COVID19 patients by analyzing Chest X-Ray images. We are running a small scale pilot where interested doctors within minutes, can receive a machine generated X-ray Report (as the one shown below) on sending us chest X-Ray of suspicious patients.</p><br></center>
 				</header>
 				<div class="container">
 					<div class="row">
